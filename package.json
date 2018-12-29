@@ -1,9 +1,17 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "dgeorgiev.biz",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal site of Daniel Georgiev",
+  "version": "1.0.0",
+  "author": "Daniel Georgiev <me@dgeorgiev.biz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgeorgiev/dgeorgiev.biz"
+  },
+  "bugs": {
+    "url": "https://github.com/dgeorgiev/dgeorgiev.biz/issues"
+  },
+  "license": "UNLICENSED",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -18,25 +26,14 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "devDependencies": {
-    "prettier": "^1.15.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

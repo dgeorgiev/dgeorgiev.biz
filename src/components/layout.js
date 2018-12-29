@@ -18,6 +18,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <link href='https://fonts.googleapis.com/css?family=Exo:400,500,600' rel='stylesheet' type='text/css'></link>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
