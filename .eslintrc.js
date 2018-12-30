@@ -17,6 +17,6 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
     semi: ["error", "always"],
-    "react/jsx-fragments": ["enabled", "syntax"]
+    "react/jsx-fragments": [2, "syntax"]
   }
 };
