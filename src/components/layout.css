@@ -41,3 +41,9 @@ pre {
   max-width: 100%;
   white-space: normal;
 }
+
+.layout {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 2em 0;
+}
