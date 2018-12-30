@@ -1,0 +1,40 @@
+@import "variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 2em;
+    padding: 1em 0;
+}
+
+.logo {
+    margin: 0;
+
+    font-weight: normal;
+    color: $color-5;
+    strong {
+        color: $color-4;
+    }
+}
+
+.navigation {
+    font-weight: 600;
+    a {
+        margin: 0 1em;
+        padding: 0.2em 0;
+
+        color: $color-5;
+        text-decoration: none;
+
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        &:hover, &.active {
+            border-bottom: 1px solid $color-4;
+        }
+    }
+}

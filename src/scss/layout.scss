@@ -1,0 +1,63 @@
+@import "variables";
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: $color-2;
+    border-top: 4px solid $color-1;
+    color: $color-5;
+}
+
+a {
+    color: $color-4;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    border: none;
+    background: $color-3;
+    margin: 1em 0;
+    padding: 0.4em 0.8em;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: darken($color-3, 10);
+    cursor: pointer;
+}
+
+label {
+    display: block;
+}
+
+fieldset {
+    padding: 1em;
+}
+
+pre {
+    max-width: 100%;
+    white-space: normal;
+}
+
+.layout {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 1em 0;
+}
