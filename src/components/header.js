@@ -4,10 +4,10 @@ import { Link } from 'gatsby';
 
 import '../scss/header.scss';
 
-const Header = () => (
+const Header = ({ siteTitle }) => (
     <header className="header">
         <h1 className="logo">
-            <Link to="/">
+            <Link to="/" title={siteTitle}>
                 <strong>daniel</strong>georgiev
             </Link>
         </h1>
