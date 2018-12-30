@@ -13,6 +13,10 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: { pathToConfigModule: `src/utils/typography.js` }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -27,7 +31,6 @@ module.exports = {
         icon: `src/images/favicon.png` // This path is relative to the root of the site.
       }
     },
-    "gatsby-plugin-offline",
-    `gatsby-plugin-typography`
+    `gatsby-plugin-offline`
   ]
 };
