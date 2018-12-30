@@ -1,18 +1,29 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'gatsby';
 
 import '../scss/header.scss';
 
 const Header = () => (
     <header className="header">
         <h1 className="logo">
-            <strong>daniel</strong>georgiev
+            <Link to="/">
+                <strong>daniel</strong>georgiev
+            </Link>
         </h1>
         <nav className="navigation">
-            <a href="#">начало</a>
-            <a href="#">проекти</a>
-            <a href="#">за мен</a>
-            <a href="#">блог</a>
+            <Link to="/" activeClassName="active">
+                начало
+            </Link>
+            <Link to="projects" activeClassName="active">
+                проекти
+            </Link>
+            <Link to="about" activeClassName="active">
+                за мен
+            </Link>
+            <Link to="blog" activeClassName="active">
+                блог
+            </Link>
         </nav>
     </header>
 );

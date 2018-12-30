@@ -1,29 +1,46 @@
 @import "variables";
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+$nav-breakpoint: 650px;
 
-    margin-bottom: 2em;
-    padding: 1em 0;
+.header {
+    margin: 0 0 2em;
+    padding: 0 0;
+
+    text-align: center;
+
+    @media screen and (min-width: $nav-breakpoint) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        padding: 1em 0;
+
+        text-align: left;
+    }
 }
 
 .logo {
-    margin: 0;
+    margin: 0 0 0.4em;
 
     font-weight: normal;
     color: $color-5;
     strong {
         color: $color-4;
     }
+    a {
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: $nav-breakpoint) {
+        margin-bottom: 0;
+    }
 }
 
 .navigation {
     font-weight: 600;
     a {
-        margin: 0 1em;
-        padding: 0.2em 0;
+        margin: 0 0.2em;
+        padding: 0.6em 0.2em;
 
         color: $color-5;
         text-decoration: none;
@@ -35,6 +52,11 @@
 
         &:hover, &.active {
             border-bottom: 1px solid $color-4;
+        }
+
+        @media screen and (min-width: $nav-breakpoint) {
+            margin: 0 1em;
+            padding: 0.2em 0;
         }
     }
 }
