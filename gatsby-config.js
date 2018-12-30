@@ -14,6 +14,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Source Sans Pro']
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: { pathToConfigModule: `src/utils/typography.js` }
     },
