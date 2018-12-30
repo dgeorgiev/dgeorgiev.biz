@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header'
-import './layout.css'
+import Header from './header';
+import './layout.css';
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
+    <StaticQuery
+        query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
@@ -16,22 +16,22 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+        render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="layout">
-          {children}
-          <footer>
+            {children}
+            <footer>
             © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+            </footer>
         </div>
       </>
-    )}
-  />
-)
+        )}
+    />
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+    children: PropTypes.node.isRequired,
+};
 
-export default Layout
+export default Layout;
