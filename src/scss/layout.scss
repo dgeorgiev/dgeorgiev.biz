@@ -98,14 +98,4 @@ footer {
     p {
         max-width: 800px;
     }
-
-    &:after {
-        content: url(../images/me.svg);
-    }
-
-    &.no-person {
-        &:after {
-            display: none;
-        }
-    }
 }
