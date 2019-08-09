@@ -9,7 +9,7 @@ import '../scss/layout.scss';
 
 const Layout = ({ children, location}) => {
     const inverted  = location.pathname === '/projects';
-    
+
     return (
     <StaticQuery
         query={graphql`
@@ -28,7 +28,7 @@ const Layout = ({ children, location}) => {
                         <Header siteTitle={data.site.siteMetadata.title} />
                         {children}
                         <footer>
-                            <p>Software Engineer & CEO at dabanny.ltd</p>
+                            <p>2019 &copy; dgeorgiev.biz</p>
                             <nav className="navigation">
                                 <a href="https://github.com/dgeorgiev">
                                     Github

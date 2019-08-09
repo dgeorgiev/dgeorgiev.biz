@@ -5,8 +5,10 @@ import SEO from '../components/seo';
 const AboutPage = () => (
     <>
         <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-        <div>Hello I am Daniel Georgiev contacts</div>
-        </>
+        <article className="home no-person">
+            Say hi at me@dgeorgiev.biz
+        </article>
+    </>
 );
 
 export default AboutPage;
