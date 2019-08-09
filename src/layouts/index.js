@@ -22,8 +22,8 @@ const Layout = ({ children, location}) => {
             }
         `}
         render={data => (
-            <Transition location={location}>
-                <div className={`layout${inverted ? ' inverted' : ''}`}>
+                <Transition location={location}>
+            <div className={`layout${inverted ? ' inverted' : ''}`}>
                     <div className="container">
                         <Header siteTitle={data.site.siteMetadata.title} />
                         {children}

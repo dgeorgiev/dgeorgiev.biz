@@ -10,16 +10,22 @@ const timeout = 200
 //This object contains basic styles for animation, but you can extend them to whatever you like. Be creative!
 const getTransitionStyles = {
     entering: {
+        width: '100%',
         position: 'absolute',
         opacity: 0,
+        transform: `translateY(-100%)`
     },
     entered: {
-        transition: `opacity ${timeout}ms ease-in-out`,
+        width: '100%',
+        transition: `all ${timeout}ms ease-in-out`,
         opacity: 1,
+        transform: `translateY(0%)`
     },
     exiting: {
+        width: '100%',
         transition: `all ${timeout}ms ease-in-out`,
-        opacity: 0
+        opacity: 0,
+        transform: `translateY(100%)`
     },
 }
 
