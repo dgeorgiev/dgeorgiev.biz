@@ -3,12 +3,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import '../scss/header.scss';
+import logo from '../images/logo.svg';
 
 const Header = ({ siteTitle }) => (
     <header className="header">
         <h1 className="logo">
             <Link to="/" title={siteTitle}>
-                <strong>daniel</strong>georgiev
+                {/* <strong>daniel</strong>georgiev */}
+                <img src={logo} alt="daniel georgiev" />
             </Link>
         </h1>
         <nav className="navigation">

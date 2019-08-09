@@ -16,8 +16,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-web-font-loader',
             options: {
-                google: {
-                    families: ['Source Sans Pro']
+                typekit: {
+                    id: 'tex1vav'
                 }
             }
         },
