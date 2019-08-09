@@ -4,27 +4,25 @@ import { Link } from 'gatsby';
 
 import '../scss/header.scss';
 import logo from '../images/logo.svg';
+import logoInverted from '../images/logo_inverted.svg';
 
 const Header = ({ siteTitle }) => (
     <header className="header">
         <h1 className="logo">
             <Link to="/" title={siteTitle}>
-                {/* <strong>daniel</strong>georgiev */}
                 <img src={logo} alt="daniel georgiev" />
+                <img src={logoInverted} alt="daniel georgiev" />
             </Link>
         </h1>
         <nav className="navigation">
             <Link to="/" activeClassName="active">
-                начало
+                bio
             </Link>
             <Link to="projects" activeClassName="active">
-                проекти
+                projects
             </Link>
-            <Link to="about" activeClassName="active">
-                за мен
-            </Link>
-            <Link to="blog" activeClassName="active">
-                блог
+            <Link to="contacts" activeClassName="active">
+                contacts
             </Link>
         </nav>
     </header>

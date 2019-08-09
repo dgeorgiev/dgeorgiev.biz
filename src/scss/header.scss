@@ -11,7 +11,7 @@ $nav-breakpoint: 650px;
     @media screen and (min-width: $nav-breakpoint) {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-content: center;
 
         padding: 1em 0;
 
@@ -22,11 +22,6 @@ $nav-breakpoint: 650px;
 .logo {
     margin: 0 0 0.4em;
 
-    font-weight: normal;
-    color: $color-5;
-    strong {
-        color: $color-4;
-    }
     a {
         text-decoration: none;
     }
@@ -34,7 +29,24 @@ $nav-breakpoint: 650px;
     @media screen and (min-width: $nav-breakpoint) {
         margin-bottom: 0;
     }
+
+    img {
+        &:last-child {
+            display: none;
+        }
+    }
+    .inverted & {
+        img {
+            &:last-child {
+                display: block;
+            }
+            &:first-child {
+                display: none;
+            }
+        }
+    }
 }
+
 
 .navigation {
     font-weight: 600;
@@ -42,7 +54,9 @@ $nav-breakpoint: 650px;
         margin: 0 0.2em;
         padding: 0.6em 0.2em;
 
-        color: $color-5;
+        color: inherit;
+        font-size: 24px;
+        font-weight: 400;
         text-decoration: none;
 
         &:last-child {
@@ -51,7 +65,8 @@ $nav-breakpoint: 650px;
         }
 
         &:hover, &.active {
-            border-bottom: 1px solid $color-4;
+            color: $color-3;
+            border-bottom: 1px solid $color-3;
         }
 
         @media screen and (min-width: $nav-breakpoint) {
@@ -59,4 +74,14 @@ $nav-breakpoint: 650px;
             padding: 0.2em 0;
         }
     }
+
+    .inverted & {
+        a {
+            &:hover, &.active {
+                color: $color-1;
+                border-color: $color-1;
+            }
+        }
+    }
 }
+

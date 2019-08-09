@@ -1,13 +1,23 @@
 import React from 'react';
 
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const ProjectsPage = () => (
-    <Layout>
+    <>
+        <div className="blackBG"></div>
         <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-        <div>Hello I am Daniel Georgiev projects</div>
-    </Layout>
+        <article className="home">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            <p>C et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            <p>C et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            <p>C et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        </article>
+    </>
 );
 
 export default ProjectsPage;

@@ -1,0 +1,7 @@
+{
+    "eslint.workingDirectories": [
+        "back",
+        "front"
+    ],
+    "eslint.enable": false
+}
