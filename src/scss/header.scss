@@ -3,7 +3,8 @@
 $nav-breakpoint: 650px;
 
 .header {
-    margin: 0 0 2em;
+    max-width: 1616px;
+    margin: 0 auto 2em;
     padding: 0 0;
 
     text-align: center;
@@ -47,7 +48,6 @@ $nav-breakpoint: 650px;
     }
 }
 
-
 .navigation {
     font-weight: 600;
     a {
@@ -64,7 +64,8 @@ $nav-breakpoint: 650px;
             padding-right: 0;
         }
 
-        &:hover, &.active {
+        &:hover,
+        &.active {
             color: $color-3;
             border-bottom: 1px solid $color-3;
         }
@@ -77,11 +78,11 @@ $nav-breakpoint: 650px;
 
     .inverted & {
         a {
-            &:hover, &.active {
+            &:hover,
+            &.active {
                 color: $color-1;
                 border-color: $color-1;
             }
         }
     }
 }
-

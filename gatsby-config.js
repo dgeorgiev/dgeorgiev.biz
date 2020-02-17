@@ -1,42 +1,58 @@
 module.exports = {
     siteMetadata: {
-        title: 'Daniel Georgiev personal site',
-        description: 'Personal site of Daniel Georgiev',
-        author: '@dgeorgiev'
+        title: "Daniel Georgiev personal site",
+        description: "Personal site of Daniel Georgiev",
+        author: "@dgeorgiev"
     },
     plugins: [
-        'gatsby-plugin-react-helmet',
+        "gatsby-plugin-react-helmet",
         {
-            resolve: 'gatsby-source-filesystem',
+            resolve: "gatsby-source-filesystem",
             options: {
-                name: 'images',
+                name: "images",
                 path: `${__dirname}/src/images`
             }
         },
         {
-            resolve: 'gatsby-plugin-web-font-loader',
+            resolve: "gatsby-plugin-web-font-loader",
             options: {
                 typekit: {
-                    id: 'tex1vav'
+                    id: "tex1vav"
                 }
             }
         },
-        'gatsby-transformer-sharp',
-        'gatsby-plugin-layout',
-        'gatsby-plugin-sharp',
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-layout",
+        "gatsby-plugin-sharp",
         {
-            resolve: 'gatsby-plugin-manifest',
+            resolve: "gatsby-plugin-manifest",
             options: {
-                name: 'dgeorgiev.biz',
-                short_name: 'starter',
-                start_url: '/',
-                background_color: '#663399',
-                theme_color: '#663399',
-                display: 'minimal-ui',
-                icon: 'src/images/favicon.png'
+                name: "dgeorgiev.biz",
+                short_name: "starter",
+                start_url: "/",
+                background_color: "#663399",
+                theme_color: "#663399",
+                display: "minimal-ui",
+                icon: "src/images/favicon.png"
             }
         },
-        'gatsby-plugin-offline',
-        'gatsby-plugin-sass'
+        "gatsby-plugin-offline",
+        "gatsby-plugin-sass",
+        `gatsby-plugin-mdx`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/config/translations`,
+                name: `translations`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/blog`,
+                name: `blog`
+            }
+        },
+        `gatsby-transformer-json`
     ]
 };

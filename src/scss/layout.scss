@@ -16,8 +16,8 @@ html {
 body {
     margin: 0;
     width: 100%;
-    
-    font-family: proxima-nova, sans-serif; 
+
+    font-family: proxima-nova, sans-serif;
     // border-top: 4px solid $color-1;
 }
 
@@ -56,22 +56,22 @@ pre {
     white-space: normal;
 }
 
-
 footer {
     display: flex;
     justify-content: space-between;
 }
 
 .layout {
+    width: 100%;
     min-height: 100vh;
-    
-    
+
     background-color: $color-1;
     color: $color-2;
 
     transition: background-color 600ms ease-in-out;
-    
+
     .container {
+        width: 100%;
         min-height: 100vh;
         padding: 1em 0;
         max-width: 1616px;
@@ -86,16 +86,22 @@ footer {
     }
 }
 
-
 .home {
-    flex: 1;
+    height: 100%;
+
     font-size: 36px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     p {
         max-width: 800px;
     }
+}
+
+.header + div {
+    flex: 1;
+    display: flex;
 }

@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Link } from 'gatsby';
+import PropTypes from "prop-types";
+import React from "react";
+import { Link } from "gatsby";
 
-import '../scss/header.scss';
-import logo from '../images/logo.svg';
-import logoInverted from '../images/logo_inverted.svg';
+import "../scss/header.scss";
+import logo from "../images/logo.svg";
+import logoInverted from "../images/logo_inverted.svg";
 
 const Header = ({ siteTitle }) => (
     <header className="header">
@@ -24,6 +24,13 @@ const Header = ({ siteTitle }) => (
             <Link to="contacts" activeClassName="active" partiallyActive={true}>
                 contacts
             </Link>
+            <Link to="/" hrefLang="bg">
+                Български
+            </Link>
+            {` `}/{` `}
+            <Link to="/en" hrefLang="en">
+                Английски
+            </Link>
         </nav>
     </header>
 );
@@ -33,7 +40,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-    siteTitle: ''
+    siteTitle: ""
 };
 
 export default Header;

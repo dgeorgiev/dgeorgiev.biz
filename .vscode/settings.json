@@ -3,5 +3,6 @@
         "back",
         "front"
     ],
-    "eslint.enable": false
+    "eslint.enable": false,
+    "editor.formatOnSave": true
 }
