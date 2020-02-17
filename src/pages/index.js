@@ -7,7 +7,7 @@ import LocalizedLink from "../components/localizedLink";
 import useTranslations from "../components/useTranslations";
 
 const IndexPage = () => {
-    const { hello, subline } = useTranslations();
+    const { hello } = useTranslations();
 
     return (
         <>

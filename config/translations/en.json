@@ -1,5 +1,7 @@
 {
-    "hello": "Hello and welcome to this i18n example site!",
-    "subline": "You can read some of my cool articles I wrote!",
-    "backToHome": "Back to home"
+    "hello": "Hello",
+    "nav_home": "home",
+    "nav_projects": "work",
+    "nav_blog": "blog",
+    "nav_about": "about"
 }

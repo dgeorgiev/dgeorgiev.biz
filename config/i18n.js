@@ -1,6 +1,6 @@
 module.exports = {
     en: {
-        path: `en`,
+        path: `en/`,
         locale: `en-US`,
         dateFormat: `DD/MM/YYYY`,
         siteLanguage: `en`,
@@ -9,7 +9,7 @@ module.exports = {
     },
     bg: {
         default: true,
-        path: `bg`,
+        path: `/`,
         locale: `bg-BG`,
         dateFormat: `DD.MM.YYYY`,
         siteLanguage: `bg`,

@@ -1,5 +1,7 @@
 {
     "hello": "Здрасти!",
-    "subline": "You can read some of my cool articles I wrote!",
-    "backToHome": "Back to home"
+    "nav_home": "начало",
+    "nav_projects": "проекти",
+    "nav_blog": "блог",
+    "nav_about": "за мен"
 }
