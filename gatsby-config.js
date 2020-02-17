@@ -22,8 +22,6 @@ module.exports = {
             }
         },
         "gatsby-transformer-sharp",
-        "gatsby-plugin-layout",
-        "gatsby-plugin-sharp",
         {
             resolve: "gatsby-plugin-manifest",
             options: {
@@ -36,8 +34,13 @@ module.exports = {
                 icon: "src/images/favicon.png"
             }
         },
-        "gatsby-plugin-offline",
-        "gatsby-plugin-sass",
+        {
+            resolve: `gatsby-plugin-sass`,
+            options: {
+                sourceMap: true,
+                sourceMapEmbed: true
+            }
+        },
         `gatsby-plugin-mdx`,
         {
             resolve: `gatsby-source-filesystem`,

@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Header from "../components/header";
-import Transition from "../components/transition";
 
 import { MDXProvider } from "@mdx-js/react";
 import MdxLink from "../components/mdxLink";

@@ -3,7 +3,6 @@ import React from "react";
 import SEO from "../components/seo";
 import me from "../images/me.png";
 
-import LocalizedLink from "../components/localizedLink";
 import useTranslations from "../components/useTranslations";
 
 const IndexPage = () => {
@@ -12,7 +11,7 @@ const IndexPage = () => {
     return (
         <>
             <SEO
-                title="Начало"
+                title={hello}
                 keywords={[
                     "dgeorgiev",
                     "developer",

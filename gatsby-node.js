@@ -13,13 +13,11 @@ exports.onCreatePage = ({ page, actions }) => {
     // So everything in src/pages/
     deletePage(page);
 
-    // Grab the keys ('en' & 'de') of locales and map over them
     Object.keys(locales).map(lang => {
-        // Use the values defined in "locales" to construct the path
         const localizedPath = locales[lang].default
             ? page.path
             : `${locales[lang].path}${page.path}`;
-
+        console.log(localizedPath);
         return createPage({
             // Pass on everything from the original page
             ...page,

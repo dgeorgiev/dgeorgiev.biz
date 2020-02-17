@@ -1,6 +1,6 @@
 module.exports = {
     en: {
-        path: `en/`,
+        path: `/en`,
         locale: `en-US`,
         dateFormat: `DD/MM/YYYY`,
         siteLanguage: `en`,

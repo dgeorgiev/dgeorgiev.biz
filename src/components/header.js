@@ -8,8 +8,21 @@ import logoInverted from "../images/logo_inverted.svg";
 import useTranslations from "./useTranslations";
 import LocalizedLink from "./localizedLink";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+import {
+    Menu,
+    MenuList,
+    MenuButton,
+    MenuItem,
+    MenuItems,
+    MenuPopover,
+    MenuLink
+} from "@reach/menu-button";
+
 const Header = ({ siteTitle }) => {
-    const { nav_home, nav_projects, nav_about, nav_blog } = useTranslations();
+    const { nav_projects, nav_about, nav_blog } = useTranslations();
     return (
         <header className="header">
             <h1 className="logo">
@@ -20,29 +33,35 @@ const Header = ({ siteTitle }) => {
             </h1>
             <nav className="navigation">
                 <LocalizedLink to="/" activeClassName="active">
-                    {nav_home}
-                </LocalizedLink>
-                <LocalizedLink
-                    to="contacts"
-                    activeClassName="active"
-                    partiallyActive={true}
-                >
                     {nav_about}
                 </LocalizedLink>
                 <LocalizedLink
-                    to="blog"
+                    to="/projects"
+                    activeClassName="active"
+                    partiallyActive={true}
+                >
+                    {nav_projects}
+                </LocalizedLink>
+                <LocalizedLink
+                    to="/blog"
                     activeClassName="active"
                     partiallyActive={true}
                 >
                     {nav_blog}
                 </LocalizedLink>
-                <Link to="/" hrefLang="bg">
-                    bg
-                </Link>
-                {` `}/{` `}
-                <Link to="/en" hrefLang="en">
-                    en
-                </Link>
+                <Menu>
+                    <MenuButton>
+                        <FontAwesomeIcon icon={faGlobe} />
+                    </MenuButton>
+                    <MenuList>
+                        <MenuLink as={Link} to="/" hrefLang="bg">
+                            Български
+                        </MenuLink>
+                        <MenuLink as={Link} to="/en" hrefLang="en">
+                            English
+                        </MenuLink>
+                    </MenuList>
+                </Menu>
             </nav>
         </header>
     );
