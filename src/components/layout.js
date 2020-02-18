@@ -8,8 +8,10 @@ import MdxLink from "../components/mdxLink";
 
 const LocaleContext = React.createContext();
 
-const Layout = ({ children, location, pageContext: { locale } }) => {
+const Layout = ({ children, location, pageContext }) => {
     const inverted = location.pathname.includes("/projects");
+    const locale =
+        pageContext && pageContext.locale ? pageContext.locale : "bg";
 
     return (
         <LocaleContext.Provider value={{ locale }}>

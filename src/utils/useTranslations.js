@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { LocaleContext } from "../layouts/index";
+import { LocaleContext } from "../layouts";
 
 const useTranslations = () => {
     const { locale } = React.useContext(LocaleContext);

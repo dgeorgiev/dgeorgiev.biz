@@ -6,7 +6,7 @@ import "../scss/header.scss";
 import logo from "../images/logo.svg";
 import logoInverted from "../images/logo_inverted.svg";
 
-import useTranslations from "./useTranslations";
+import useTranslations from "../utils/useTranslations";
 import LocalizedLink from "./localizedLink";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -3,7 +3,7 @@ import React from "react";
 import SEO from "../components/seo";
 import me from "../images/me.png";
 
-import useTranslations from "../components/useTranslations";
+import useTranslations from "../utils/useTranslations";
 
 const IndexPage = () => {
     const { hello } = useTranslations();
