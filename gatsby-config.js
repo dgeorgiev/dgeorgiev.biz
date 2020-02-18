@@ -5,7 +5,6 @@ module.exports = {
         author: "@dgeorgiev"
     },
     plugins: [
-        "gatsby-plugin-react-helmet",
         {
             resolve: "gatsby-source-filesystem",
             options: {
@@ -21,6 +20,7 @@ module.exports = {
                 }
             }
         },
+        "gatsby-plugin-layout",
         "gatsby-transformer-sharp",
         {
             resolve: "gatsby-plugin-manifest",

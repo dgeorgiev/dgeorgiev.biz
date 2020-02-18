@@ -10,17 +10,6 @@ const IndexPage = () => {
 
     return (
         <>
-            <SEO
-                title={hello}
-                keywords={[
-                    "dgeorgiev",
-                    "developer",
-                    "full-stack developer",
-                    "javascript",
-                    "php",
-                    "react"
-                ]}
-            />
             <article className="home">
                 <p>Hi - I'm Daniel</p>
                 <img src={me} />

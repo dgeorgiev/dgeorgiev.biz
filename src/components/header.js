@@ -5,21 +5,14 @@ import { Link } from "gatsby";
 import "../scss/header.scss";
 import logo from "../images/logo.svg";
 import logoInverted from "../images/logo_inverted.svg";
+
 import useTranslations from "./useTranslations";
 import LocalizedLink from "./localizedLink";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
-import {
-    Menu,
-    MenuList,
-    MenuButton,
-    MenuItem,
-    MenuItems,
-    MenuPopover,
-    MenuLink
-} from "@reach/menu-button";
+import { Menu, MenuList, MenuButton, MenuLink } from "@reach/menu-button";
 
 const Header = ({ siteTitle }) => {
     const { nav_projects, nav_about, nav_blog } = useTranslations();

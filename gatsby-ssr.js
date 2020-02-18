@@ -1,3 +1,3 @@
-import CustomLayout from "./wrapPageElement";
+import Layout from "./src/layouts/index";
 
-export const wrapPageElement = CustomLayout;
+export const wrapPageElement = Layout;

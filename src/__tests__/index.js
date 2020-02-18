@@ -1,16 +1,16 @@
-// import React from 'react';
-// import { render } from 'react-testing-library';
-// import IndexPage from '../pages/index';
- 
-jest.mock('../components/seo.js', () => 'div');
+import React from "react";
+import { render } from "@testing-library/react";
+import IndexPage from "../pages/index";
 
-describe('IndexPage', () => {
-    it('renders correctly', () => {
-        // const location = {
-        //     pathname: '/'
-        // };
+jest.mock("../components/seo.js", () => "div");
 
-        // const { asFragment } = render(<IndexPage location={location} />);
-        // expect(asFragment()).toMatchSnapshot();
+describe("IndexPage", () => {
+    it("renders correctly", () => {
+        const location = {
+            pathname: "/"
+        };
+
+        const { asFragment } = render(<IndexPage />);
+        expect(asFragment()).toMatchSnapshot();
     });
 });

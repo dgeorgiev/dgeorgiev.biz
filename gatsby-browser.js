@@ -1,6 +1,6 @@
-import CustomLayout from "./wrapPageElement";
+import Layout from "./src/layouts/index";
 
 import "@reach/menu-button/styles.css";
 import "./src/scss/layout.scss";
 
-export const wrapPageElement = CustomLayout;
+export default Layout;

@@ -1,63 +1,63 @@
 {
-  "name": "dgeorgiev.biz",
-  "private": true,
-  "description": "Personal site of Daniel Georgiev",
-  "version": "1.0.0",
-  "author": "Daniel Georgiev <daniel@dabanny.com",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dgeorgiev/dgeorgiev.biz"
-  },
-  "bugs": {
-    "url": "https://github.com/dgeorgiev/dgeorgiev.biz/issues"
-  },
-  "license": "UNLICENSED",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@fortawesome/react-fontawesome": "^0.1.8",
-    "@mdx-js/mdx": "^1.5.5",
-    "@mdx-js/react": "^1.5.5",
-    "@reach/menu-button": "^0.8.4",
-    "gatsby": "2.19.18",
-    "gatsby-image": "^2.2.41",
-    "gatsby-plugin-layout": "^1.1.22",
-    "gatsby-plugin-manifest": "^2.2.41",
-    "gatsby-plugin-mdx": "^1.0.73",
-    "gatsby-plugin-offline": "^3.0.35",
-    "gatsby-plugin-react-helmet": "^3.1.22",
-    "gatsby-plugin-sass": "^2.1.28",
-    "gatsby-plugin-sharp": "^2.4.5",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-json": "^2.2.26",
-    "gatsby-transformer-sharp": "^2.3.14",
-    "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-transition-group": "^4.3.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^25.1.0",
-    "babel-preset-gatsby": "^0.2.29",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.18.3",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.1.0",
-    "jest-dom": "^4.0.0",
-    "prettier": "^1.19.1",
-    "react-test-renderer": "^16.12.0",
-    "react-testing-library": "^8.0.1"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  }
+    "name": "dgeorgiev.biz",
+    "private": true,
+    "description": "Personal site of Daniel Georgiev",
+    "version": "1.0.0",
+    "author": "Daniel Georgiev <daniel@dabanny.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dgeorgiev/dgeorgiev.biz"
+    },
+    "bugs": {
+        "url": "https://github.com/dgeorgiev/dgeorgiev.biz/issues"
+    },
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.27",
+        "@fortawesome/free-solid-svg-icons": "^5.12.1",
+        "@fortawesome/react-fontawesome": "^0.1.8",
+        "@mdx-js/mdx": "^1.5.5",
+        "@mdx-js/react": "^1.5.5",
+        "@reach/menu-button": "^0.8.4",
+        "@testing-library/jest-dom": "^5.1.1",
+        "@testing-library/react": "^9.4.0",
+        "gatsby": "2.19.18",
+        "gatsby-image": "^2.2.41",
+        "gatsby-plugin-layout": "^1.1.22",
+        "gatsby-plugin-manifest": "^2.2.41",
+        "gatsby-plugin-mdx": "^1.0.73",
+        "gatsby-plugin-offline": "^3.0.35",
+        "gatsby-plugin-react-helmet": "^3.1.22",
+        "gatsby-plugin-sass": "^2.1.28",
+        "gatsby-plugin-sharp": "^2.4.5",
+        "gatsby-plugin-web-font-loader": "^1.0.4",
+        "gatsby-source-filesystem": "^2.1.48",
+        "gatsby-transformer-json": "^2.2.26",
+        "gatsby-transformer-sharp": "^2.3.14",
+        "node-sass": "^4.13.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-helmet": "^5.2.1",
+        "react-transition-group": "^4.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "babel-core": "^6.26.3",
+        "babel-jest": "^25.1.0",
+        "babel-preset-gatsby": "^0.2.29",
+        "eslint": "^6.8.0",
+        "eslint-plugin-react": "^7.18.3",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^25.1.0",
+        "prettier": "^1.19.1",
+        "react-test-renderer": "^16.12.0"
+    },
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "start": "npm run develop",
+        "format": "prettier --write \"src/**/*.js\"",
+        "test": "jest"
+    }
 }
