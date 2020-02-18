@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => {
                 </LocalizedLink>
                 <Menu>
                     <MenuButton>
-                        <FontAwesomeIcon icon={faGlobe} />
+                        <FontAwesomeIcon icon={faGlobe} style={{ width: 32 }} />
                     </MenuButton>
                     <MenuList>
                         <MenuLink as={Link} to="/" hrefLang="bg">
