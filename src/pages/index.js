@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
     const { latestFromBlog } = data;
     return (
         <>
-            <SEO title="За мен" keywords={["gatsby", "application", "react"]} />
+            <SEO title={home_title} />
             <article className="home-introduction">
                 <div className="home-intro">
                     <h2>{home_title}</h2>

@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import SEO from '../components/seo';
+import SEO from "../components/seo";
+import useTranslations from "../utils/useTranslations";
 
-const NotFoundPage = () => (
-    <>
-        <SEO title="404: Not found" />
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </>
-);
+const NotFoundPage = () => {
+    const { not_found } = useTranslations();
+    return (
+        <>
+            <SEO title="404: Not found" />
+            <h1>{not_found}</h1>
+        </>
+    );
+};
 
 export default NotFoundPage;

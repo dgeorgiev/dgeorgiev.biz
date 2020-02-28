@@ -1,12 +1,46 @@
-import React from 'react';
+import React from "react";
 
-import SEO from '../components/seo';
+import SEO from "../components/seo";
+import LatestFromBlog from "../components/latestFromBlog";
 
-const BlogPage = () => (
-    <>
-        <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-        <div>Hello I am Daniel Georgiev blog</div>
+import useTranslations from "../utils/useTranslations";
+import { graphql } from "gatsby";
+
+const BlogPage = ({ data }) => {
+    const { blog } = useTranslations();
+    const { items } = data;
+    return (
+        <>
+            <SEO title={blog} />
+            <LatestFromBlog title={blog} items={items} />
         </>
-);
+    );
+};
 
 export default BlogPage;
+
+export const query = graphql`
+    query Blog($locale: String) {
+        items: allMdx(
+            filter: { fields: { locale: { eq: $locale } } }
+            sort: { fields: frontmatter___date, order: DESC }
+        ) {
+            edges {
+                node {
+                    id
+                    timeToRead
+                    excerpt
+                    frontmatter {
+                        title
+                        date(fromNow: true)
+                        slug
+                        image
+                    }
+                    fields {
+                        locale
+                    }
+                }
+            }
+        }
+    }
+`;

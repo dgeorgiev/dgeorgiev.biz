@@ -39,6 +39,7 @@ const query = graphql`
                         home_text_3
                         home_text_4
                         home_text_5
+                        not_found
                     }
                 }
             }
