@@ -32,7 +32,7 @@ export const query = graphql`
                     excerpt
                     frontmatter {
                         title
-                        date(fromNow: true)
+                        date(formatString: "DD.MM.YYYY")
                         slug
                         image
                     }
