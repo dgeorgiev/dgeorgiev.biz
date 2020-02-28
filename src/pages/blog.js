@@ -34,7 +34,6 @@ export const query = graphql`
                         title
                         date(formatString: "DD.MM.YYYY")
                         slug
-                        image
                     }
                     fields {
                         locale
