@@ -29,13 +29,6 @@ const Header = ({ siteTitle }) => {
                     {nav_about}
                 </LocalizedLink>
                 <LocalizedLink
-                    to="/projects"
-                    activeClassName="active"
-                    partiallyActive={true}
-                >
-                    {nav_projects}
-                </LocalizedLink>
-                <LocalizedLink
                     to="/blog"
                     activeClassName="active"
                     partiallyActive={true}

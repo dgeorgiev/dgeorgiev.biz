@@ -1,18 +1,20 @@
 import React from "react";
 
 import SEO from "../components/seo";
+import LatestFromBlog from "../components/latestFromBlog";
 import me from "../images/me.png";
 
 import useTranslations from "../utils/useTranslations";
+import { graphql } from "gatsby";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
     const { hello } = useTranslations();
-
+    const { latestFromBlog } = data;
     return (
         <>
             <SEO title="За мен" keywords={["gatsby", "application", "react"]} />
             <article className="home-introduction">
-                <div class="home-intro">
+                <div className="home-intro">
                     <h2>Hi, I'm Daniel.</h2>
                     <p>
                         Full Stack developer with <strong>10+ years</strong> of
@@ -57,46 +59,12 @@ const IndexPage = () => {
                         Occasionally enduro riding or track days with my miata.
                     </p>
                 </div>
-                <div class="home-photo">
+                <div className="home-photo">
                     <img src={me} />
                 </div>
             </article>
-            <section>
-                <h2>Blog</h2>
-                <div class="blog-list">
-                    <article>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/350x200" />
-                            <h1>Simple react native setup</h1>
-                            <p>
-                                In today article I will share a simple setup for
-                                an app with user role based flows.
-                            </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/350x200" />
-                            <h1>Laravel Epay new version</h1>
-                            <p>
-                                A few years ago I got a home task for a job
-                                opportunity which resulted in this package.
-                            </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/350x200" />
-                            <h1>New site launched</h1>
-                            <p>
-                                After a dozen of tries I finally come up with
-                                something that I like.
-                            </p>
-                        </a>
-                    </article>
-                </div>
-            </section>
-            <section class="contact-box">
+            <LatestFromBlog latestFromBlog={latestFromBlog} />
+            <section className="contact-box">
                 <p>
                     If you have an challenging project or just want to say hi
                     please reach me at at{" "}
@@ -110,3 +78,30 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+    query LatestFromBlog($locale: String) {
+        latestFromBlog: allMdx(
+            filter: { fields: { locale: { eq: $locale } } }
+            limit: 3
+            sort: { fields: frontmatter___date, order: DESC }
+        ) {
+            edges {
+                node {
+                    id
+                    timeToRead
+                    excerpt
+                    frontmatter {
+                        title
+                        date(fromNow: true)
+                        slug
+                        image
+                    }
+                    fields {
+                        locale
+                    }
+                }
+            }
+        }
+    }
+`;

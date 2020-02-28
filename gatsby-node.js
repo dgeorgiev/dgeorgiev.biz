@@ -93,13 +93,10 @@ exports.createPages = async ({ graphql, actions }) => {
     const postList = result.data.blog.edges;
 
     postList.forEach(({ node: post }) => {
-        // All files for a blogpost are stored in a folder
-        // relativeDirectory is the name of the folder
         const slug = post.relativeDirectory;
 
         const title = post.childMdx.frontmatter.title;
 
-        // Use the fields created in exports.onCreateNode
         const locale = post.childMdx.fields.locale;
         const isDefault = post.childMdx.fields.isDefault;
 
@@ -107,9 +104,6 @@ exports.createPages = async ({ graphql, actions }) => {
             path: localizedSlug({ isDefault, locale, slug }),
             component: postTemplate,
             context: {
-                // Pass both the "title" and "locale" to find a unique file
-                // Only the title would not have been sufficient as articles could have the same title
-                // in different languages, e.g. because an english phrase is also common in german
                 locale,
                 title
             }

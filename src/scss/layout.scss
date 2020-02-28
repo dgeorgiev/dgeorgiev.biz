@@ -151,10 +151,14 @@ main {
 
     article {
         padding-right: 4em;
+        h3 {
+            margin-bottom: 0;
+        }
         p {
             max-width: 80%;
         }
         & > a {
+            display: block;
             text-decoration: none;
         }
     }
