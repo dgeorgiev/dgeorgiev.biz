@@ -33,6 +33,12 @@ const query = graphql`
                         blog
                         about
                         contact_text
+                        home_title
+                        home_text_1
+                        home_text_2
+                        home_text_3
+                        home_text_4
+                        home_text_5
                     }
                 }
             }
