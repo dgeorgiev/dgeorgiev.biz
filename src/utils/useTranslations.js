@@ -29,11 +29,10 @@ const query = graphql`
                 node {
                     name
                     translations: childTranslationsJson {
-                        hello
-                        nav_home
-                        nav_projects
-                        nav_blog
-                        nav_about
+                        projects
+                        blog
+                        about
+                        contact_text
                     }
                 }
             }

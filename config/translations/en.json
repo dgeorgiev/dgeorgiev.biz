@@ -1,7 +1,6 @@
 {
-    "hello": "Hello",
-    "nav_home": "home",
-    "nav_projects": "work",
-    "nav_blog": "blog",
-    "nav_about": "about"
+    "projects": "work",
+    "blog": "blog",
+    "about": "about",
+    "contact_text": "If you have an challenging project or just want to say hi please reach me at"
 }

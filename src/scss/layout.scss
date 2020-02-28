@@ -131,7 +131,7 @@ main {
 
 .home-introduction {
     padding: 2em 0;
-    font-size: 20px;
+    font-size: 18px;
 
     display: flex;
     justify-content: space-between;
@@ -181,4 +181,10 @@ main {
     padding: 4em 0;
     font-size: 22px;
     text-align: center;
+}
+
+section {
+    h2 {
+        text-transform: capitalize;
+    }
 }

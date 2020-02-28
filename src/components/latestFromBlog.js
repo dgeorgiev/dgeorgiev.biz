@@ -1,13 +1,11 @@
 import React from "react";
 import LocalizedLink from "./localizedLink";
 
-function LatestFromBlog({ latestFromBlog }) {
-    console.log(latestFromBlog);
-    const { edges: elements } = latestFromBlog;
-    console.log(elements);
+function LatestFromBlog({ title, items }) {
+    const { edges: elements } = items;
     return (
         <section>
-            <h2>Blog</h2>
+            <h2>{title}</h2>
             <div className="blog-list">
                 {elements.map(({ node: element }) => (
                     <article key={element.id}>
@@ -17,10 +15,7 @@ function LatestFromBlog({ latestFromBlog }) {
                                 {element.frontmatter.date}, {element.timeToRead}{" "}
                                 min
                             </small>
-                            <p>
-                                In today article I will share a simple setup for
-                                an app with user role based flows.
-                            </p>
+                            <p>{element.excerpt}</p>
                         </LocalizedLink>
                     </article>
                 ))}

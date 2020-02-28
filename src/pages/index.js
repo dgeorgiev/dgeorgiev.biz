@@ -8,7 +8,7 @@ import useTranslations from "../utils/useTranslations";
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
-    const { hello } = useTranslations();
+    const { blog, contact_text } = useTranslations();
     const { latestFromBlog } = data;
     return (
         <>
@@ -52,9 +52,13 @@ const IndexPage = ({ data }) => {
                         .
                     </p>
                     <p>
+                        Previously at Clippings.com, PFSWeb (LiveArea Europe),
+                        EPAM, Powerty, Cog Graphics.
+                    </p>
+                    <p>
                         In my free time I enjoy spending time with my family,
                         <br />
-                        watching motosports(formula, motogp) and playing games
+                        watching motosports (formula1, motogp) and playing games
                         <br />
                         Occasionally enduro riding or track days with my miata.
                     </p>
@@ -63,16 +67,7 @@ const IndexPage = ({ data }) => {
                     <img src={me} />
                 </div>
             </article>
-            <LatestFromBlog latestFromBlog={latestFromBlog} />
-            <section className="contact-box">
-                <p>
-                    If you have an challenging project or just want to say hi
-                    please reach me at at{" "}
-                    <a href="mailto:daniel@dabanny.com?Subject=Hi">
-                        <strong>daniel@dabanny.com</strong>
-                    </a>
-                </p>
-            </section>
+            <LatestFromBlog title={blog} items={latestFromBlog} />
         </>
     );
 };

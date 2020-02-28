@@ -8,6 +8,8 @@ import MdxLink from "../components/mdxLink";
 
 export const LocaleContext = React.createContext();
 
+import Footer from "../components/footer";
+
 const Layout = ({ children, location, pageContext }) => {
     const inverted = location && location.pathname.includes("/projects");
     const locale =
@@ -20,17 +22,7 @@ const Layout = ({ children, location, pageContext }) => {
                     <Header />
                     <div className="container">
                         <main>{children}</main>
-                        <footer>
-                            <p>2020 &copy; dgeorgiev.biz</p>
-                            <nav className="navigation">
-                                <a href="https://github.com/dgeorgiev">
-                                    github
-                                </a>
-                                <a href="https://www.linkedin.com/in/daniel-georgiev-97430222/">
-                                    linkedin
-                                </a>
-                            </nav>
-                        </footer>
+                        <Footer />
                     </div>
                 </div>
             </MDXProvider>
