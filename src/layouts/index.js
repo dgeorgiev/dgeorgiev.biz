@@ -19,12 +19,15 @@ const Layout = ({ children, location, pageContext }) => {
                 <div className={`layout${inverted ? " inverted" : ""}`}>
                     <Header />
                     <div className="container">
-                        {children}
+                        <main>{children}</main>
                         <footer>
                             <p>2020 &copy; dgeorgiev.biz</p>
                             <nav className="navigation">
                                 <a href="https://github.com/dgeorgiev">
-                                    Github
+                                    github
+                                </a>
+                                <a href="https://www.linkedin.com/in/daniel-georgiev-97430222/">
+                                    linkedin
                                 </a>
                             </nav>
                         </footer>

@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 const ProjectsPage = () => (
     <>
         <div className="blackBG"></div>
-        <SEO title="Home" keywords={["gatsby", "application", "react"]} />
+        <SEO title="Проекти" keywords={["gatsby", "application", "react"]} />
         <article className="home">
             <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
