@@ -22,10 +22,18 @@ $nav-breakpoint: 650px;
 }
 
 .logo {
-    margin: 0 0 0.4em;
+    margin: 0;
+
+    display: flex;
+    align-items: end;
+    height: 48px;
 
     a {
+        display: inline-block;
         text-decoration: none;
+        img {
+            display: inline-block;
+        }
     }
 
     @media screen and (min-width: $nav-breakpoint) {
