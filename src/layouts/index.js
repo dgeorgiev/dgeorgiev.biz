@@ -24,12 +24,6 @@ const Layout = ({ children, location, pageContext }) => {
                         <main>{children}</main>
                         <Footer />
                     </div>
-                    <script
-                        async
-                        defer
-                        data-domain="dgeorgiev.biz"
-                        src="https://plausible.io/js/plausible.js"
-                    ></script>
                 </div>
             </MDXProvider>
         </LocaleContext.Provider>
